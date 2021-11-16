@@ -51,4 +51,26 @@ class TestMaksukortti(unittest.TestCase):
         self.kortti = Maksukortti(4)
         self.kortti.syo_maukkaasti()
         self.assertEqual(str(self.kortti), "Kortilla on rahaa 0 euroa")
+    
+    def kortin_saldo_alussa_oikein(self):
+        self.kortti = 10
+    
+    def rahan_lataus_kasvattaa_saldoa_oikein(self):
+        self.kortti.lataa_rahaa(10)
+        self.assertEqual(str(self.kortti), "Kortilla on rahaa 20 euroa")
 
+    def saldo_vahenee_oikein_jos_on_rahaa(self):
+        self.kortti.syo_maukkaasti()
+        self.assertEqual(str(self.kortti), "Kortilla on rahaa 6 euroa")
+
+    def saldo_ei_muutu_jos_rahaa_ei_ole_tarpeeksi(self):
+        self.kortti.syo_maukkaasti()
+        self.kortti.syo_maukkaasti()
+        self.kortti.syo_maukkaasti()
+        self.assertEqual(str(self.kortti), "Kortilla on rahaa 2 euroa")
+
+    def riittiko_rahat(self):
+        if self.saldo_vahenee_oikein_jos_on_rahaa(self):
+            return True
+        else:
+            return False
