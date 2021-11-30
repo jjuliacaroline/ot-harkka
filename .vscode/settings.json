@@ -1,0 +1,10 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "newsdb_connection",
+            "database": "${workspaceFolder:ot-harkka}/news.db"
+        }
+    ]
+}

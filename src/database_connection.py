@@ -1,9 +1,8 @@
-import os
+"""Modules"""
 import sqlite3
 
-dirname = os.path.dirname(__file__)
-
-connection = sqlite3.connect("database.sqlite")
+connection = sqlite3.connect("news.db")
 
 def get_database_connection():
+    """Initialized connection to the database"""
     return connection
