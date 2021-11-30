@@ -6,7 +6,7 @@ import db_init
 
 class MainClass:
     """Methods for collecting, storing and printing data"""
-    def get_topics():
+    def get_topics(self):
         """Scrapes website and returns a list of topics"""
         topics_lst = []
         url = "https://www.economist.com/espresso"
@@ -37,7 +37,7 @@ class MainClass:
 def db_operations():
     """Operations from creating a table, scraping data, checking duplicates, storing and printing"""
     db_init.create_table()
-    topics = MainClass.get_topics()
+    topics = MainClass.get_topics(self=MainClass)
 
     duplicates = db_init.check_duplicates()
     count = db_init.row_count()
