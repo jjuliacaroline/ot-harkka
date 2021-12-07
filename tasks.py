@@ -2,7 +2,7 @@ from invoke import task
 
 @task
 def start(ctx):
-    ctx.run("python3 src/main_service.py", pty=True)
+    ctx.run("python3 src/services/harkka.py", pty=True)
 
 @task
 def lint(ctx):

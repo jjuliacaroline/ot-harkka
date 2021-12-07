@@ -8,6 +8,7 @@ authors = ["Julia <jroukala@helsinki.fi>"]
 python = "^3.8"
 beautifulsoup4 = "^4.10.0"
 requests = "^2.26.0"
+coverage = "^6.2"
 
 [tool.poetry.dev-dependencies]
 coverage = "^6.2"

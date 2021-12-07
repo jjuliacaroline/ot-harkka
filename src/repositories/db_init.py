@@ -1,5 +1,5 @@
 """Modules"""
-from database_connection import get_database_connection
+from repositories.database_connection import get_database_connection
 
 conn = get_database_connection()
 

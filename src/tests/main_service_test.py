@@ -1,6 +1,6 @@
 """Modules"""
 import unittest
-from main_service import MainClass
+from services.main_service import MainClass
 
 class TestMainClass(unittest.TestCase):
     """Testing the main class"""

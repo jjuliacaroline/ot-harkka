@@ -36,7 +36,7 @@ unicode_backport = ["unicodedata2"]
 name = "coverage"
 version = "6.2"
 description = "Code coverage measurement for Python"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6"
 
@@ -93,7 +93,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "0a818cecb91d00a4af2b3ec1d092502e11a5f75abab369dff308459f9fbdcbca"
+content-hash = "668fa33e0951eb199ddd50235e2e84ff57cb662547104d0c7e80d2cdcbfb97f4"
 
 [metadata.files]
 beautifulsoup4 = [

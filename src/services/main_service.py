@@ -1,7 +1,13 @@
 """Modules"""
+import sys
 import requests
 from bs4 import BeautifulSoup
-import db_init
+from repositories import db_init
+sys.path.insert(0, '../src')
+#import repositories.db_init as db_init
+
+
+#from ui.create_ui import GUI as gui
 
 
 class MainClass:
@@ -34,19 +40,15 @@ class MainClass:
         for i in data:
             print(i[-1])
 
-def db_operations():
-    """Operations from creating a table, scraping data, checking duplicates, storing and printing"""
-    db_init.create_table()
-    topics = MainClass.get_topics(self=MainClass)
+    def db_operations(topics):
+        """Operations from creating a table, scraping data, checking duplicates, storing n printing"""
+        db_init.create_table()
+        #topics = MainClass.get_topics(self=MainClass)
 
-    duplicates = db_init.check_duplicates()
-    count = db_init.row_count()
+        duplicates = db_init.check_duplicates()
+        count = db_init.row_count()
 
-    if count <= 0:
-        MainClass.store_topics(topics)
-    elif len(duplicates) < 1:
-        MainClass.store_topics(topics)
-
-    MainClass.print_topics()
-
-db_operations()
+        if count <= 0:
+            MainClass.store_topics(topics)
+        elif len(duplicates) < 1:
+            MainClass.store_topics(topics)

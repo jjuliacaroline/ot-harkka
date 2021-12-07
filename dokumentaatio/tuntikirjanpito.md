@@ -12,3 +12,9 @@
 ### 30.11
 - Käytetty aika: > 10
 - Mitä tein: SQL-tietokannan kehitystä
+### 7.12
+- Käytetty aika > 6
+- Mitä tein: UI:n kehittelyä
+
+### Tunnit yhteensä
+- 38
