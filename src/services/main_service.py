@@ -4,11 +4,6 @@ import requests
 from bs4 import BeautifulSoup
 from repositories import db_init
 sys.path.insert(0, '../src')
-#import repositories.db_init as db_init
-
-
-#from ui.create_ui import GUI as gui
-
 
 class MainClass:
     """Methods for collecting, storing and printing data"""
@@ -40,15 +35,14 @@ class MainClass:
         for i in data:
             print(i[-1])
 
-    def db_operations(topics):
-        """Operations from creating a table, scraping data, checking duplicates, storing n printing"""
+    def db_operations(self, topics):
+        """Operations from creating a table, scraping data, check duplicates, storing n printing"""
         db_init.create_table()
-        #topics = MainClass.get_topics(self=MainClass)
 
         duplicates = db_init.check_duplicates()
         count = db_init.row_count()
 
         if count <= 0:
-            MainClass.store_topics(topics)
+            MainClass.store_topics(MainClass, topics)
         elif len(duplicates) < 1:
-            MainClass.store_topics(topics)
+            MainClass.store_topics(MainClass, topics)

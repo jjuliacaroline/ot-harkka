@@ -1,14 +1,9 @@
 from tkinter import Tk, ttk, constants
-#from requests.api import head
-#import sys
-
-#sys.path.insert(0, './src')
-#from services.main_service import MainClass
 
 class GUI:
     def __init__(self, root, nstring):
         self._root = root
-        self._nstring = nstring#MainClass.get_topics(self)
+        self._nstring = nstring
         self._entry = None
         self._yes_button = None
         self._header = None

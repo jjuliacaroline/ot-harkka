@@ -20,3 +20,4 @@ Ohjelmiston rakenne voidaan kuvata komennolla:
 # Dokumentaatio
 -[Vaatimusmäärittely](dokumentaatio/vaatimusmaarittely.md)
 -[Tuntiaikakirjanpito](dokumentaatio/tuntikirjanpito.md)
+-[Release](https://github.com/jjuliacaroline/ot-harkka/releases/tag/viikko5)

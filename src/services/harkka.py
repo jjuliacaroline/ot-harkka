@@ -4,9 +4,9 @@ from main_service import MainClass as logic
 from ui import create_ui
 
 class Harkkatyo:
-    def main():
+    def main(self):
         topics = logic.get_topics(self=logic)
-        logic.db_operations(topics)
+        logic.db_operations(logic, topics)
         create_ui.main_loop(topics)
 
-Harkkatyo.main()
+Harkkatyo.main(self=Harkkatyo)
