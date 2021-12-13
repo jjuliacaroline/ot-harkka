@@ -6,19 +6,19 @@ conn = get_database_connection()
 
 class Actions:
 
-    def create_table():
+    def create_table(self):
         """Creates a table into the database"""
         cur = conn.cursor()
         cur.execute('''CREATE TABLE IF NOT EXISTS news (id INTEGER, text TEXT)''')
         conn.commit()
 
-    def drop_table():
+    def drop_table(self):
         """Deletes the table"""
         cur = conn.cursor()
         cur.execute('''DROP TABLE news''')
         conn.commit()
 
-    def get_all_from_table():
+    def get_all_from_table(self):
         """Return all table elements"""
         cur = conn.cursor()
         cur.execute('''SELECT * FROM news''')
@@ -26,13 +26,13 @@ class Actions:
         conn.commit()
         return data
 
-    def insert_to_table(id_str, text_str):
+    def insert_to_table(self, id_str, text_str):
         """Insert values into the table"""
         cur = conn.cursor()
         cur.execute("INSERT INTO news (id, text) VALUES (?, ?)", (int(id_str), str(text_str)))
         conn.commit()
 
-    def check_duplicates():
+    def check_duplicates(self):
         """Checks for duplicates and returns a list of the duplicate values"""
         dup_lst = []
         cur = conn.cursor()
@@ -42,7 +42,7 @@ class Actions:
             dup_lst.append(i)
         return dup_lst
 
-    def row_count():
+    def row_count(self):
         """Returns floar value of the number of rows"""
         cur = conn.cursor()
         cur.execute("SELECT COUNT(*) FROM news")

@@ -29,18 +29,18 @@ class MainClass:
             Actions.insert_to_table(j, i)
             j += 1
 
-    def print_topics():
+    def print_topics(self):
         """Retrieves topics from database and prints them"""
-        data = Actions.get_all_from_table()
+        data = Actions.get_all_from_table(self)
         for i in data:
             print(i[-1])
 
     def db_operations(self, topics):
         """Operations from creating a table, scraping data, check duplicates, storing n printing"""
-        Actions.create_table()
+        Actions.create_table(self)
 
-        duplicates = Actions.check_duplicates()
-        count = Actions.row_count()
+        duplicates = Actions.check_duplicates(self)
+        count = Actions.row_count(self)
 
         if count <= 0:
             MainClass.store_topics(MainClass, topics)
