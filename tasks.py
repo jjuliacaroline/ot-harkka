@@ -2,7 +2,7 @@ from invoke import task
 
 @task
 def start(ctx):
-    ctx.run("python3 src/services/harkka.py", pty=True)
+    ctx.run("python3 ./src/services/harkka.py", pty=True)
 
 @task
 def lint(ctx):
@@ -19,3 +19,4 @@ def coverage_report(ctx):
 @task
 def test(ctx):
     ctx.run("pytest src")
+    
