@@ -10,6 +10,7 @@ beautifulsoup4 = "^4.10.0"
 requests = "^2.26.0"
 coverage = "^6.2"
 invoke = "^1.6.0"
+pytest = "^6.2.5"
 
 [tool.poetry.dev-dependencies]
 coverage = "^6.2"
