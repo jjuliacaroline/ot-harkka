@@ -15,6 +15,6 @@ repositories.
 
 Käyttöliittymän hallinta tapahtuu ui-kansiossa ja sitä ohjaa ohjelma create_ui. Se luo graafisen käyttöliittymän Tkinter-kirjaston avulla ja hoitaa onClick tapahtumia. Ohjelma hakee uutiset tietokannasta kun käyttäjä painaa nappia.
 
-Ohjelman logiikka seijaitsee services-kansiossa. main_service kerää datan internetistä ja hyödyntää repositories-kansion ohjelmia datan tallennuksessa, tarkistuksissa ja hauissa. Lopulta seka main_service ja create_ui toiminnot yhdistetään ohjelmassa harkka.
+Ohjelman logiikka seijaitsee services-kansiossa. main_service kerää datan internetistä ja hyödyntää repositories-kansion ohjelmia datan tallennuksessa, tarkistuksissa ja hauissa. Lopulta sekä main_service ja create_ui toiminnot yhdistetään ohjelmassa harkka.
 
 ![Sekvenssikaavio](Kuvat/Sekvenssikaavio.png)

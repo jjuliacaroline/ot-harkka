@@ -1,5 +1,5 @@
 # News scraper
-Ohjelma mahdollistaa datan keräyksen annetuista uutislähteistä. Data voidaan tallentaa tietokantaan josta sitä voi hakea ja jatkojalostaa erinäisiin käyttötarkoituksiin.
+Ohjelma mahdollistaa datan keräyksen annetuista uutislähteistä. Data voidaan tallentaa tietokantaan josta sitä voi hakea ja tarvitaessa jatkojalostaa erinäisiin käyttötarkoituksiin.
 
 ## Asennus ja kirjastot
 Sovellus on rakennettu Python versiolla 3.8 
@@ -27,6 +27,6 @@ Ohjelmiston rakenne voidaan kuvata komennolla:
 
 -[Release](https://github.com/jjuliacaroline/ot-harkka/releases/tag/viikko5)
 
-- [Arkkitehtuuri](dokumentaatio/arkkitehtuuri.md)
+-[Arkkitehtuuri](dokumentaatio/arkkitehtuuri.md)
 
-- [Käyttöohje](dokumentaatio/kauttoohje.md)
+-[Käyttöohje](dokumentaatio/kauttoohje.md)

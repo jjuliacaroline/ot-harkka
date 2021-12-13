@@ -29,7 +29,7 @@ class GUI:
 
 def main_loop(nstring):
     window = Tk()
-    window.title = ("news scraper")
+    window.title = ('Daily briefing')
     window.geometry("1000x2000")
 
     ui = GUI(window, nstring)
