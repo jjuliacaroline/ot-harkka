@@ -17,4 +17,4 @@ Käyttöliittymän hallinta tapahtuu ui-kansiossa ja sitä ohjaa ohjelma create_
 
 Ohjelman logiikka seijaitsee services-kansiossa. main_service kerää datan internetistä ja hyödyntää repositories-kansion ohjelmia datan tallennuksessa, tarkistuksissa ja hauissa. Lopulta seka main_service ja create_ui toiminnot yhdistetään ohjelmassa harkka.
 
-![Sekvenssikaavio](dokumentaatio/Kuvat/Sekvenssikaavio.png)
+![Sekvenssikaavio](Kuvat/Sekvenssikaavio.png)

@@ -15,6 +15,9 @@
 ### 7.12
 - Käytetty aika > 6
 - Mitä tein: UI:n kehittelyä
+### 14.12
+- Käytetty aika > 8
+- Mitä tein: Ohjelman perustoiminnallisuus on valmis. Ohjelman korjailua ja pieniä lisäyksiä
 
 ### Tunnit yhteensä
-- 38
+- 46
