@@ -2,8 +2,8 @@
 import sys
 import requests
 from bs4 import BeautifulSoup
-from repositories import db_init
-sys.path.insert(0, '../src')
+sys.path.insert(0, './src')
+from repositories.db_init import Actions
 
 class MainClass:
     """Methods for collecting, storing and printing data"""
@@ -26,21 +26,21 @@ class MainClass:
         """Stores scraped topics into a database"""
         j = 0
         for i in items:
-            db_init.insert_to_table(j, i)
+            Actions.insert_to_table(j, i)
             j += 1
 
     def print_topics():
         """Retrieves topics from database and prints them"""
-        data = db_init.get_all_from_table()
+        data = Actions.get_all_from_table()
         for i in data:
             print(i[-1])
 
     def db_operations(self, topics):
         """Operations from creating a table, scraping data, check duplicates, storing n printing"""
-        db_init.create_table()
+        Actions.create_table()
 
-        duplicates = db_init.check_duplicates()
-        count = db_init.row_count()
+        duplicates = Actions.check_duplicates()
+        count = Actions.row_count()
 
         if count <= 0:
             MainClass.store_topics(MainClass, topics)
