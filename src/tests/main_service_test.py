@@ -12,6 +12,6 @@ class TestMainClass(unittest.TestCase):
 
     def test_store_topics(self):
         """Store topics test"""
-        output = MainClass.store_topics(self@MainClass, items=["a"])
+        output = MainClass.store_topics(TestMainClass, items=["a"])
         self.assertEqual(output, None)
     
