@@ -26,7 +26,7 @@ class MainClass:
         """Stores scraped topics into a database"""
         j = 0
         for i in items:
-            Actions.insert_to_table(j, i)
+            Actions.insert_to_table(self, j, i)
             j += 1
 
     def print_topics(self):
