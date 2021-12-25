@@ -35,4 +35,4 @@ Ohjelmiston rakenteen tarkastelu:
 
 -[Käyttöohje](dokumentaatio/kauttoohje.md)
 
--[Testausdokumentti](dokumentaatio/coverage.png)
+-[Testausdokumentti](dokumentaatio/testaus.md)
