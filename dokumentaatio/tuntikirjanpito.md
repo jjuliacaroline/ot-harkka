@@ -19,5 +19,9 @@
 - Käytetty aika > 8
 - Mitä tein: Ohjelman perustoiminnallisuus on valmis. Ohjelman korjailua ja pieniä lisäyksiä
 
+### 26.12
+- Käytetty aika > 5
+- Mitä tein: Ohjelman dokumentaation lisäilyä ja testikattavuuden laajennusta
+
 ### Tunnit yhteensä
-- 46
+- 51

@@ -8,19 +8,23 @@ Käytetyt kirjastot: Beautifulsoup ja requests
 
 ## Komentorivitoiminnot
 Ohjelman suoritus:
+
 ```poetry run invoke start```
 
 Ohjelman testaus:
+
 ```poetry run invoke test```
 
 Testikattavuusraportin muodostus
+
 ```poetry run invoke coverage_report```
 
 ## Pylint
-Ohjelmiston rakenne voidaan kuvata komennolla:
+Ohjelmiston rakenteen tarkastelu:
+
 ```poetry run invoke lint```
 
-# Dokumentaatio
+## Dokumentaatio
 -[Vaatimusmäärittely](dokumentaatio/vaatimusmaarittely.md)
 
 -[Tuntiaikakirjanpito](dokumentaatio/tuntikirjanpito.md)
@@ -30,3 +34,5 @@ Ohjelmiston rakenne voidaan kuvata komennolla:
 -[Arkkitehtuuri](dokumentaatio/arkkitehtuuri.md)
 
 -[Käyttöohje](dokumentaatio/kauttoohje.md)
+
+-[Testausdokumentti](dokumentaatio/coverage.png)

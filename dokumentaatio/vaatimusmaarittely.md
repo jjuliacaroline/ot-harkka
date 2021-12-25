@@ -1,12 +1,12 @@
 # Vaatimusmäärittely
 ## Sovelluksen tarkoitus
-Sovelluksen avulla käyttäjä voi kerätä netistä mielenkiintoista dataa ja hyödyntää sitä eri käyttökohteissa.
+Käyttäjä voi ladata päivän uutiset "daily briefing" sivulta economist.com/espresso.
 ## Käyttäjät
 Käyttäjiä on vain yksi.
 ## Toiminnallisuus
-- Sovelluksessa on mahdollisuus valita mistä dataa halutaan kerätä
+- Käyttöliittymässä on nappi, jota painamalla ohjelma parsii uutiset sivustolta
 - Sovellus siistii ja järjestelee datan luettavaan muotoon
-- Järjestelty data voidaan halutessa tallentaa tietokantaan
+- Järjestelty data tallentaan tietokantaan ja siirretään sieltä näkyville käyttöliittymään
 ## Mahdollisia jatkokehitysideoita
 - Datan visualisointi graafisesti
-- Muu vastaava tapa esittää jokin johtopäätös datasta
+- Muu vastaava tapa esittää jokin ennuste tai johtopäätös datasta

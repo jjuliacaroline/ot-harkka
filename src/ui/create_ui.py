@@ -1,6 +1,7 @@
 from tkinter import Tk, ttk, constants
 
 class GUI:
+    """Creates and manages user interface"""
     def __init__(self, root, nstring):
         self._root = root
         self._nstring = nstring
@@ -28,11 +29,12 @@ class GUI:
             title.pack(padx=20, pady=20)
 
 def main_loop(nstring):
+    """Main loop for creating and running the UI"""
     window = Tk()
     window.title = ('Daily briefing')
     window.geometry("1000x2000")
 
-    ui = GUI(window, nstring)
-    ui.create_object()
+    new_ui = GUI(window, nstring)
+    new_ui.create_object()
 
     window.mainloop()

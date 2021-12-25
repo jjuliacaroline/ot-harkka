@@ -14,3 +14,6 @@
 /.vscode
 /src/pycache
 /tkinter
+.coverage
+.pytest_cache
+__pycache__
