@@ -7,6 +7,10 @@ Sovellus on rakennettu Python versiolla 3.8
 Käytetyt kirjastot: Beautifulsoup ja requests
 
 ## Komentorivitoiminnot
+Asenna ohjelman suorittamiseen tarvittavat kirjastot:
+
+```poetry install```
+
 Ohjelman suoritus:
 
 ```poetry run invoke start```
