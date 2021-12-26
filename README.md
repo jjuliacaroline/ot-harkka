@@ -17,7 +17,7 @@ Ohjelman testaus:
 
 Testikattavuusraportin muodostus
 
-```poetry run invoke coverage_report```
+```poetry run invoke coverage-report```
 
 ## Pylint
 Ohjelmiston rakenteen tarkastelu:
